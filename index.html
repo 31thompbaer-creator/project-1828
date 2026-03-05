@@ -83,13 +83,6 @@
       z-index: 10;
     }
 
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      display: block;
-    }
-
     .corner {
       position: absolute;
       width: 16px;
@@ -102,6 +95,24 @@
     .corner.tr { top: -8px; right: -8px; }
     .corner.bl { bottom: -8px; left: -8px; }
     .corner.br { bottom: -8px; right: -8px; }
+
+    .play-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 18px;
+      color: #ffee55;
+      text-decoration: none;
+      background: #000;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .play-btn:hover {
+      background: #111;
+      color: #fff;
+    }
 
     .info-bar {
       width: 95%;
@@ -169,9 +180,7 @@
     <div class="corner tr"></div>
     <div class="corner bl"></div>
     <div class="corner br"></div>
-    <a href="eaglercraft.1.8.8 (1).html" style="display:flex;align-items:center;justify-content:center;height:200px;font-family:'Press Start 2P',monospace;font-size:18px;color:#ffee55;text-decoration:none;background:#000;">
-  ▶ CLICK TO PLAY
-</a>
+    <a href="game.html" class="play-btn">▶ CLICK TO PLAY</a>
   </div>
 
   <div class="info-bar">
@@ -198,3 +207,4 @@
 
 </body>
 </html>
+>
